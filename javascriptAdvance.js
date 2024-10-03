@@ -63,5 +63,43 @@ const users = []
  
 for( let i=0; i<users.length; i++){
 
-  console.log(users[i])
+  // costruisco il ciclo per stampare tutto e lo prorvo
+  // console.log(users[i])
+  // creo una costante con dati non variabili di tutti i dati degli utenti
+
+  const labelUser = users[i]
+
+  // controllo verifico che sia corretto
+  // console.log(labelUuser)
+  // assegnio il name ed il lastName che dovra contenere la mia etichetta finale
+
+  let finalLabelUser= `${labelUser.name} ${labelUser.lastName}`
+
+  // controllo name e lastname 
+  // console.log(finalLabelUser)
+
+  // assegnio alle etichette finali lo status ambassador o non ambassador 
+
+  if(labelUser.isAmbassador){
+     
+    // controllo se l'utente e un ambassador se si applico la scritta " è Ambassador "
+    // console.log(finalLabelUser + " è Ambassador ")
+    // ora lo icorporo nel codice 
+
+    finalLabelUser += " è Ambassador "
+    
+    // torno a controllare 
+    // console.log(finalLabelUser)
+    // ora proseguo con quelli escusi 
+
+  }else{
+    finalLabelUser+= " non è Ambassador"
+
+    // controllo il risutlato 
+    //console.log(finalLabelUser)
+  }
+
+  // controllo tutta la lista 
+  console.log(finalLabelUser)
+
 }
