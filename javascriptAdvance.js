@@ -58,5 +58,10 @@ const users = []
     users.push(marco)
     users.push(paul)
     users.push(amy)
+
+    //console.log(users)
  
-    console.log(users)
+for( let i=0; i<users.length; i++){
+
+  console.log(users[i])
+}
