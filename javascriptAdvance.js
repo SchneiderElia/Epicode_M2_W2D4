@@ -42,13 +42,21 @@ let ambassadorsale = 30
 let freesheep = 0
 
 let marcoSplit = Object.entries(marco)
-console.log(marcoSplit)
-
+/* console.log(marcoSplit)
+ */
 let paulSplit = Object.entries(paul)
-console.log(paulSplit)
+/* console.log(paulSplit) */
 
 let amySplit = Object.entries(amy)
-console.log(amySplit)
+/* console.log(amySplit) */
 
 let listName = marcoSplit.concat(paulSplit.concat(amySplit))
-console.log(listName)
+/* console.log(listName) */
+
+
+const users = []
+    users.push(marco)
+    users.push(paul)
+    users.push(amy)
+ 
+    console.log(users)
