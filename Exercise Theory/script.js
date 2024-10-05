@@ -1,3 +1,4 @@
+
 /* Create un form in cui l'utente inserira 3 parole,
 queste parole vanno a popolare un array.
 Dopo aver inserito le tre parole l'utente cliccherà
@@ -14,7 +15,7 @@ parola tutti lunghezza 5 */
 
 
 
-let wordOne = "ciao"
+/* let wordOne = "ciao"
 let wordTow = "a"
 let wordThree = "tutti"
 
@@ -23,5 +24,21 @@ console.log("la frase è : " + wordOne + " " +  wordTow + " " + wordThree)
 console.log(" parola "+ wordOne + " lunghezza " + wordOne.length)
 console.log(" parola "+ wordTow + " lunghezza " + wordTow.length)
 console.log(" parola "+ wordThree + " lunghezza " + wordThree.length)
+ */
 
 
+let word = document.getElementById("insert")
+
+let result = [];
+
+function add(){
+    result.push(word.value)
+    result.value
+    console.log(result)
+}
+
+function total(){
+    for(let element of result){
+        console.log("la parola " +element+ " a lunghehzza " +element.length)
+    }
+}
