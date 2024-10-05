@@ -61,7 +61,7 @@ const users = []
 
     //console.log(users)
  
-for( let i=0; i<users.length; i++){
+/* for( let i=0; i<users.length; i++){
 
   // costruisco il ciclo per stampare tutto e lo prorvo
   // console.log(users[i])
@@ -73,7 +73,9 @@ for( let i=0; i<users.length; i++){
   // console.log(labelUuser)
   // assegnio il name ed il lastName che dovra contenere la mia etichetta finale
 
-  let finalLabelUser= `${labelUser.name} ${labelUser.lastName}`
+  let finalLabelUser = `${labelUser.name} ${labelUser.lastName}`
+  //let userListAmbassador = `${labelUser.name} ${labelUser.lastName}`
+  //let userList = `${labelUser.name} ${labelUser.lastName}`
 
   // controllo name e lastname 
   // console.log(finalLabelUser)
@@ -86,7 +88,7 @@ for( let i=0; i<users.length; i++){
     // console.log(finalLabelUser + " è Ambassador ")
     // ora lo icorporo nel codice 
 
-    finalLabelUser += " è Ambassador "
+    finalLabelUser += " è Ambassador ";
     
     // torno a controllare 
     // console.log(finalLabelUser)
@@ -100,6 +102,39 @@ for( let i=0; i<users.length; i++){
   }
 
   // controllo tutta la lista 
-  console.log(finalLabelUser)
+  
+  //console.log(typeof finalLabelUser)
 
+  const finalLabelUserSplit = finalLabelUser.split(",")
+  console.log(finalLabelUserSplit)
+
+
+  const userListAmbassador  =  `${labelUser.isAmbassador} `
+  console.log(userListAmbassador)
+} */
+
+
+
+
+for( let i=0; i<users.length; i++){
+
+  const labelUser = users[i]
+
+  let finalLabelUser = `${labelUser.name} ${labelUser.lastName}`
+
+  if(labelUser.isAmbassador){
+
+    finalLabelUser += " è Ambassador ";
+
+  }else{
+    finalLabelUser+= " non è Ambassador"
+
+  }
+
+  const finalLabelUserSplit = finalLabelUser.split(",")
+  console.log(finalLabelUserSplit)
+
+
+  //const userListAmbassador  =  `${labelUser.isAmbassador} `
+  //console.log(userListAmbassador)
 }
